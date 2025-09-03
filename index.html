@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vanilla JS To-Do</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="todo-app">
+    <h1>To-Do</h1>
+
+    <div class="input-row">
+      <input id="task-input" type="text" placeholder="Add a new task..." autofocus />
+      <button id="add-btn" aria-label="Add task">Add</button>
+    </div>
+
+    <ul id="list" aria-live="polite"></ul>
+
+    <div class="footer">
+      <span id="count">0 items</span>
+      <div class="filters">
+        <button class="filter is-active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+        <button id="clear-completed" title="Remove completed tasks">Clear Done</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
